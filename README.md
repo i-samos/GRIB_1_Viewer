@@ -30,5 +30,8 @@ export_fig by Oliver Woodford and Yair Altman, GitHub repository
 Wind barb plotter by Nicholas, MATLAB Central File Exchange. Retrieved March 30, 2023.
 (https://www.mathworks.com/matlabcentral/fileexchange/33851-wind-barb-plotter)
 
+MY_XTICKLABELS by Pekka Kumpulainen, MATLAB Central File Exchange. Retrieved March 30, 2023.
+(https://www.mathworks.com/matlabcentral/fileexchange/19059-my_xticklabels)
+
 <h2> Purpose </h2>
 This application is designed to offer an uncomplicated method for visualizing meteorological parameters for scientific purposes, such as publishing in scientific journals. The code is flexible and can be adapted to function in various regions.
