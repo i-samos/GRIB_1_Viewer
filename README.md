@@ -1,6 +1,9 @@
 <h1> GRIB1 Viewer </h1>
 <h2> A MATLAB Application for Visualizing Meteorological Parameters </h2>
 
+![Example Image](https://github.com/i-samos/GRIB_1_Viewer/blob/main/Windows%2010/splash.png)
+
+
 This is an application written in MATLAB that can read GRIB1 files and visualize meteorological parameters. Due to size constraints, this application only includes map data for Europe.
 
 <h2> Usage </h2>
