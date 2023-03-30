@@ -13,8 +13,14 @@ This application requires GRIB edition 1 data to function properly. Due to size 
 <h2> Credits </h2>
 This application uses code and tools from the following sources:
 
-nctoolbox by B. Schlining, R. Signell, A. Crosby, Github repository, (https://github.com/nctoolbox/nctoolbox)
-Efficient GRIB1 data reader by Shugong Wang, MATLAB Central File Exchange. Retrieved March 30, 2023. (https://www.mathworks.com/matlabcentral/fileexchange/53705-efficient-grib1-data-reader)
+nctoolbox by B. Schlining, R. Signell, A. Crosby, Github repository
+(https://github.com/nctoolbox/nctoolbox)
+
+Efficient GRIB1 data reader by Shugong Wang, MATLAB Central File Exchange. Retrieved March 30, 2023. 
+(https://www.mathworks.com/matlabcentral/fileexchange/53705-efficient-grib1-data-reader)
+
+export_fig by Oliver Woodford and Yair Altman, GitHub repository
+(https://github.com/altmany/export_fig/releases/tag/v3.34)
 
 <h2> Purpose </h2>
 This application is designed to offer an uncomplicated method for visualizing meteorological parameters for scientific purposes, such as publishing in scientific journals. The code is flexible and can be adapted to function in various regions.
