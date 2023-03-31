@@ -12,7 +12,7 @@ The purpose of this application is to provide an easy way to visualize meteorolo
 
 The INPUT_GRIB directory is a required component of the application, as it contains sub-folders that represent different models. Each sub-folder must contain files with the same projection in order for them to be read correctly. Additionally, the GRIB files within the sub-folders must have a ".grb" extension (e.g. "test.grb") in order to be recognized by the application. Finally, the "stations.xls" file is also a required component to allow for point stations to be plotted during the first load. This application has been tested with MATLAB versions 16b and 17a.
 
-After the main GUI window has opened, you need to manually select the corresponding sub-directory, which refers to the specific "model", for the upper left corner of GUI.
+After the main GUI window has opened, you need to manually select the corresponding sub-directory, which refers to the specific "model", from the upper left corner of GUI.
 
 <h2> Code Modifications and Future Work </h2>
 This application uses C code for MEX files, which has been modified to export the output to a text file in the filesystem and then read the text file back into MATLAB. This was done as a temporary solution until further work can be done to properly modify the code to assign the data to a matrix inside MATLAB. Future work for this application can include modifying the code to read GRIB2 files using nctoolbox. Currently, the application only supports GRIB1 files due to limitations with the code. By extending the capabilities of the application to read GRIB2 files, users can expand the range of data that can be visualized.
