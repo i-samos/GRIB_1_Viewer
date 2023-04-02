@@ -182,7 +182,7 @@ tempo=CC4(:,1);
 [~,tempo]=unique(sort(tempo));
 CC4=CC4(tempo,:);
 
-iin=datetime(CC4(:,18),'InputFormat','dd-MM-yy HH:mm:ss');
+iin=datetime(CC4(:,18),'InputFormat','dd-MMM-yy HH:mm:ss');
 [iin,a2]=sort(iin);
 CC4=CC4(a2,:);
 
@@ -1147,7 +1147,7 @@ elseif strcmp(char(acc_str(acc_val)),'24 hour')==1
 elseif strcmp(char(acc_str(acc_val)),'None')==1
 end
 CC8(any(cellfun(@(x) any(isnan(x)),CC8),2),:) = [];
-iin=datetime(CC8(:,18),'InputFormat','dd-MM-yy HH:mm:ss');
+iin=datetime(CC8(:,18),'InputFormat','dd-MMM-yy HH:mm:ss');
 [iin,a2]=sort(iin);
 CC8=CC8(a2,:);
 assignin('base','CC8',CC8);
@@ -2573,7 +2573,7 @@ read_contents_exe(strcat(INITIAL,DIR_NAME,'\',file));
 diary off
 CC3 = importfile('diary', 1);
 assignin('base','CC3',CC3);
-delete('diary')
+% delete('diary')
 CC3 = cellstr(CC3);
 [CC3(:,10),~]=strtok(CC3(:,10),'"');
 [CC3(:,15),~]=strtok(CC3(:,15),'"');
@@ -2624,6 +2624,18 @@ catch
         FC_ACC=AN+ minutes(cell2mat(cellfun(@(x,y) x*y, CC3(:,10),CC3(:,11),'UniformOutput',false)));
     end
 end
+
+
+try
+   AN=datetime(AN,'Format','yy-MMM-dd HH:mm:ss');
+end
+try
+    FC=datetime(FC,'Format','yy-MMM-dd HH:mm:ss');
+end
+try
+    FC_ACC=datetime(FC_ACC,'Format','yy-MMM-dd HH:mm:ss');
+end
+
 CC3(:,17)=cellstr(AN);
 try
     CC3(:,18)=cellstr(FC);
